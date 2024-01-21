@@ -1,0 +1,22 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window main_window {
+      label {img to json} open
+      xywh {637 302 704 434} type Double color 7 resizable visible
+    } {
+      Fl_Button button {
+        label {click me}
+        xywh {245 315 225 55} resizable hotspot
+      }
+      Fl_Input input {
+        xywh {285 176 145 24} labeltype NO_LABEL
+      }
+    }
+  }
+}
