@@ -8,12 +8,18 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.79"
 fltk = {version = "1.4.22",features = ["fltk-bundled"]}
-rusty-tesseract = "1.1.9"
+# rusty-tesseract = "1.1.9"
 serde = {version = "1.0.195",features = ["derive"]}
 serde_json = "1.0.111"
+tesseract = {version = "0.15.1",features = ["tesseract_5_2"]}
+
+# [build]
+# rustc-link-search = ["C/Users/Administrator/Desktop/code/vcpkg/installed/x64-windows/lib"]
+
 
 [build-dependencies]
 fl2rust = "0.5.19"
+
 
 
 
