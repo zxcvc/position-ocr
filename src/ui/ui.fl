@@ -1,5 +1,5 @@
 # data file for the Fltk User Interface Designer (fluid)
-version 1.0400
+version 1.0309
 header_name {.h}
 code_name {.cxx}
 class UserInterface {open
@@ -7,15 +7,24 @@ class UserInterface {open
   Function {make_window()} {open
   } {
     Fl_Window main_window {
-      label {img to json} open
-      xywh {637 302 704 434} type Double color 7 resizable visible
+      label {img to json} open selected
+      xywh {2256 354 1069 434} type Double box UP_BOX color 7 resizable size_range {0 0 9999 99999} visible
     } {
-      Fl_Button button {
-        label {click me}
-        xywh {245 315 225 55} resizable hotspot
+      Fl_Button comfir_button {
+        label {识别}
+        xywh {25 350 225 55}
       }
-      Fl_Input input {
-        xywh {285 176 145 24} labeltype NO_LABEL
+      Fl_Group group {
+        xywh {10 65 369 165}
+      } {
+        Fl_Input dir_input {
+          label {图片目录}
+          xywh {21 131 265 34} labelfont 4 align 5
+        }
+        Fl_Button select_btn {
+          label {...}
+          xywh {285 135 50 29}
+        }
       }
     }
   }

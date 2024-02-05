@@ -1,8 +1,11 @@
 use fl2rust;
 use std::env;
 use std::path::PathBuf;
-
+use winres::WindowsResource;
 fn main() {
+    let res = WindowsResource::new();
+    res.compile().unwrap();
+
     println!("cargo:rustc-link-lib=Crypt32");
     println!("cargo:rustc-link-lib=User32");
 
